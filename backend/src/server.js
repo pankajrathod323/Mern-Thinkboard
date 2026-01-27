@@ -11,6 +11,8 @@ const {PORT} = process.env;
 
 connectDB();
 
+app.use(express.json());
+
 app.use("/api/notes", notesRoutes);
 
 
